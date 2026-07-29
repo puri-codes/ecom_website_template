@@ -1,0 +1,89 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+
+:root {
+  --token-bg: #F9F8F2;
+  --token-text: #121212;
+  --token-muted: #988985;
+  --token-subtle: #786E5F;
+  --token-border: rgba(152, 137, 133, 0.25);
+  --font-serif: 'EB Garamond', Georgia, serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --container-max: 1600px;
+  --container-pad: 1rem;
+  --container-pad-md: 2rem;
+}
+
+body {
+  background-color: var(--token-bg);
+  color: var(--token-text);
+  font-family: var(--font-serif);
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Typography Helpers */
+.font-serif-display {
+  font-family: var(--font-serif);
+}
+
+.font-mono-code {
+  font-family: var(--font-mono);
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--token-bg);
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(18, 18, 18, 0.2);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(18, 18, 18, 0.4);
+}
+
+/* Infinite Ticker Animation */
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-ticker {
+  display: flex;
+  width: max-content;
+  animation: ticker 35s linear infinite;
+}
+
+.animate-ticker:hover {
+  animation-play-state: paused;
+}
+
+/* Slow Pulse / Soft Glow */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 6s ease-in-out infinite;
+}

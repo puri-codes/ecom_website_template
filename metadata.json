@@ -1,0 +1,6 @@
+{
+  "name": "Verite — Premium Fashion & Natural Fibre",
+  "description": "A quiet house of things made slowly, for people who keep them for a long time.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
