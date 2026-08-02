@@ -21,12 +21,12 @@ export default function ContactSection() {
   };
 
   return (
-    <section className="w-full py-24 md:py-32 border-t border-[#988985]/15 bg-[#F9F8F2]">
-      <div className="max-w-[1600px] mx-auto px-4 md:px-8 grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-start">
+    <section className="w-full py-24 md:py-32 border-t border-[#765439]/15 bg-[#e9eae2]">
+      <div className="max-w-[1600px] mx-auto page-shell grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-start">
         
         {/* Left Column: Heading & Copy */}
         <div className="lg:col-span-5 space-y-5">
-          <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
+          <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium">
             GET IN TOUCH
           </p>
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-serif-display text-[#121212] tracking-tight leading-[1.05]">
@@ -40,11 +40,11 @@ export default function ContactSection() {
         {/* Right Column: Contact Form */}
         <div className="lg:col-span-7">
           {submitted ? (
-            <div className="p-10 bg-[#F5F3ED] border border-[#988985]/20 rounded-xs text-center space-y-4">
+            <div className="p-10 bg-[#F5F3ED] border border-[#765439]/20 rounded-xs text-center space-y-4">
               <h3 className="text-2xl font-serif-display text-[#121212]">
                 Thank you for your message.
               </h3>
-              <p className="text-sm font-mono-code text-[#988985]">
+              <p className="text-sm font-mono-code text-[#765439]">
                 We have received your enquiry and will respond within 24 hours.
               </p>
             </div>
@@ -53,7 +53,7 @@ export default function ContactSection() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-10">
                 {/* First Name */}
                 <div className="space-y-1 border-b border-[#121212]/30 focus-within:border-[#121212] pb-3 transition-colors">
-                  <label htmlFor="contact-first-name" className="block text-sm font-mono-code text-[#988985]">
+                  <label htmlFor="contact-first-name" className="block text-sm font-mono-code text-[#765439]">
                     First Name
                   </label>
                   <input
@@ -69,7 +69,7 @@ export default function ContactSection() {
 
                 {/* Last Name */}
                 <div className="space-y-1 border-b border-[#121212]/30 focus-within:border-[#121212] pb-3 transition-colors">
-                  <label htmlFor="contact-last-name" className="block text-sm font-mono-code text-[#988985]">
+                  <label htmlFor="contact-last-name" className="block text-sm font-mono-code text-[#765439]">
                     Last Name
                   </label>
                   <input
@@ -86,7 +86,7 @@ export default function ContactSection() {
 
               {/* Email Address */}
               <div className="space-y-1 border-b border-[#121212]/30 focus-within:border-[#121212] pb-3 transition-colors">
-                <label htmlFor="contact-email" className="block text-sm font-mono-code text-[#988985]">
+                <label htmlFor="contact-email" className="block text-sm font-mono-code text-[#765439]">
                   Email address
                 </label>
                 <input
@@ -102,7 +102,7 @@ export default function ContactSection() {
 
               {/* Message */}
               <div className="space-y-1 border-b border-[#121212]/30 focus-within:border-[#121212] pb-3 transition-colors">
-                <label htmlFor="contact-message" className="block text-sm font-mono-code text-[#988985]">
+                <label htmlFor="contact-message" className="block text-sm font-mono-code text-[#765439]">
                   Message
                 </label>
                 <textarea
@@ -120,7 +120,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 id="contact-submit-button"
-                className="w-full py-5 bg-[#121212] text-[#F9F8F2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#121212]/90 transition-colors rounded-xs font-medium text-center"
+                className="w-full py-5 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors rounded-xs font-medium text-center"
               >
                 Submit
               </button>

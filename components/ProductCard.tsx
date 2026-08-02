@@ -47,7 +47,7 @@ export default function ProductCard({ product }: ProductCardProps) {
         <h3 className="text-base md:text-lg font-serif-display font-medium text-[#121212] group-hover:underline underline-offset-4 decoration-[#121212]/30 transition-all">
           {product.title}
         </h3>
-        <p className="text-sm font-mono-code text-[#988985]">
+        <p className="text-sm font-mono-code text-[#765439]">
           {product.formattedPrice}
         </p>
       </div>

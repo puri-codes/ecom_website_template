@@ -12,8 +12,8 @@ export default function AboutPage() {
     <div className="w-full bg-[#F9F8F2] text-[#121212]">
       
       {/* SECTION 1: HERO */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 pt-20 md:pt-28 pb-20 text-center space-y-8">
-        <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
+      <section className="max-w-[1600px] mx-auto page-shell pt-20 md:pt-28 pb-20 text-center space-y-8">
+        <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium">
           OUR STORY
         </p>
         <h1 className="text-7xl sm:text-9xl md:text-[140px] font-serif-display font-normal text-[#121212] tracking-tight leading-none">
@@ -38,8 +38,8 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 2: FOUNDING STATEMENT */}
-      <section className="max-w-[1200px] mx-auto px-4 md:px-8 py-20 text-center space-y-6 border-t border-[#988985]/15">
-        <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
+      <section className="max-w-[1200px] mx-auto page-shell py-20 text-center space-y-6 border-t border-[#765439]/15">
+        <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium">
           1997 — THE BEGINNING
         </p>
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-display text-[#121212] leading-relaxed tracking-tight">
@@ -48,12 +48,12 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 3: TIMELINE (A SLOW HISTORY) */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-24 border-t border-[#988985]/15 space-y-14">
-        <div className="flex justify-between items-baseline border-b border-[#988985]/20 pb-5">
+      <section className="max-w-[1600px] mx-auto page-shell py-24 border-t border-[#765439]/15 space-y-14">
+        <div className="flex justify-between items-baseline border-b border-[#765439]/20 pb-5">
           <h2 className="text-4xl md:text-5xl font-serif-display text-[#121212]">
             A slow history
           </h2>
-          <p className="text-sm font-mono-code text-[#988985] uppercase tracking-wider">
+          <p className="text-sm font-mono-code text-[#765439] uppercase tracking-wider">
             04 CHAPTERS
           </p>
         </div>
@@ -61,8 +61,8 @@ export default function AboutPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10">
           
           {/* Chapter 1 */}
-          <div className="p-10 border border-[#988985]/20 bg-[#F5F3ED] rounded-xs space-y-4">
-            <p className="text-sm font-mono-code text-[#786E5F]">1997</p>
+          <div className="p-10 border border-[#765439]/20 bg-[#F5F3ED] rounded-xs space-y-4">
+            <p className="text-sm font-mono-code text-[#492d22]">1997</p>
             <h3 className="text-3xl font-serif-display font-medium text-[#121212]">
               The first loom
             </h3>
@@ -72,8 +72,8 @@ export default function AboutPage() {
           </div>
 
           {/* Chapter 2 */}
-          <div className="p-10 border border-[#988985]/20 bg-[#F5F3ED] rounded-xs space-y-4">
-            <p className="text-sm font-mono-code text-[#786E5F]">2004</p>
+          <div className="p-10 border border-[#765439]/20 bg-[#F5F3ED] rounded-xs space-y-4">
+            <p className="text-sm font-mono-code text-[#492d22]">2004</p>
             <h3 className="text-3xl font-serif-display font-medium text-[#121212]">
               Sourcing our own flax
             </h3>
@@ -83,8 +83,8 @@ export default function AboutPage() {
           </div>
 
           {/* Chapter 3 */}
-          <div className="p-10 border border-[#988985]/20 bg-[#F5F3ED] rounded-xs space-y-4">
-            <p className="text-sm font-mono-code text-[#786E5F]">2015</p>
+          <div className="p-10 border border-[#765439]/20 bg-[#F5F3ED] rounded-xs space-y-4">
+            <p className="text-sm font-mono-code text-[#492d22]">2015</p>
             <h3 className="text-3xl font-serif-display font-medium text-[#121212]">
               A second workshop
             </h3>
@@ -94,8 +94,8 @@ export default function AboutPage() {
           </div>
 
           {/* Chapter 4 */}
-          <div className="p-10 border border-[#988985]/20 bg-[#F5F3ED] rounded-xs space-y-4">
-            <p className="text-sm font-mono-code text-[#786E5F]">Today</p>
+          <div className="p-10 border border-[#765439]/20 bg-[#F5F3ED] rounded-xs space-y-4">
+            <p className="text-sm font-mono-code text-[#492d22]">Today</p>
             <h3 className="text-3xl font-serif-display font-medium text-[#121212]">
               Still small, on purpose
             </h3>
@@ -108,8 +108,8 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 4: THE MATERIALS */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-24 border-t border-[#988985]/15 space-y-20">
-        <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
+      <section className="max-w-[1600px] mx-auto page-shell py-24 border-t border-[#765439]/15 space-y-20">
+        <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium">
           THE MATERIALS
         </p>
 
@@ -159,9 +159,9 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 5: THE PEOPLE / ATELIER GALLERY */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-24 border-t border-[#988985]/15 space-y-10">
+      <section className="max-w-[1600px] mx-auto page-shell py-24 border-t border-[#765439]/15 space-y-10">
         <div>
-          <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium mb-3">
+          <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium mb-3">
             THE PEOPLE
           </p>
           <h2 className="text-4xl md:text-5xl font-serif-display text-[#121212]">
@@ -234,14 +234,14 @@ export default function AboutPage() {
       </section>
 
       {/* SECTION 6: CLOSING STATEMENT & CTA */}
-      <section className="w-full py-28 bg-[#F5F3ED] border-t border-b border-[#988985]/15 text-center space-y-10 px-4">
+      <section className="w-full py-28 bg-[#F5F3ED] border-t border-b border-[#765439]/15 text-center space-y-10 page-shell">
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif-display italic text-[#121212] max-w-3xl mx-auto leading-relaxed">
           &ldquo;We don&apos;t know how big Verite will become. We only know we won&apos;t rush the making to find out.&rdquo;
         </h2>
         <div>
           <Link
             href="/shop"
-            className="inline-block px-10 py-5 bg-[#121212] text-[#F9F8F2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#121212]/85 transition-colors rounded-xs"
+            className="inline-block px-10 py-5 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors rounded-xs"
           >
             Shop the collection
           </Link>

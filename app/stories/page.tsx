@@ -31,7 +31,7 @@ export default function StoriesPage() {
       </section>
 
       {/* EDITORIAL STORIES GRID */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20 md:py-28">
+      <section className="max-w-[1600px] mx-auto page-shell py-20 md:py-28">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-20">
           {STORIES.map((story) => (
             <Link
@@ -52,13 +52,13 @@ export default function StoriesPage() {
               </div>
 
               <div className="space-y-3 max-w-2xl">
-                <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-wider">
+                <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-wider">
                   {story.title}
                 </p>
                 <h2 className="text-2xl md:text-3xl font-serif-display font-medium text-[#121212] group-hover:underline underline-offset-4 decoration-1">
                   {story.excerpt}
                 </h2>
-                <p className="text-sm font-mono-code text-[#988985] pt-2">
+                <p className="text-sm font-mono-code text-[#765439] pt-2">
                   {story.date}
                 </p>
               </div>

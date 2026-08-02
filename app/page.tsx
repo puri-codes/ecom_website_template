@@ -46,16 +46,16 @@ export default function HomePage() {
   const featuredStories = STORIES.slice(0, 4);
 
   return (
-    <div className="w-full bg-[#F9F8F2] text-[#121212]">
+    <div className="w-full bg-[#e9eae2] text-[#121212]">
       
       {/* SECTION 1: HERO HEADER */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 pt-10 md:pt-16 pb-12">
+      <section className="max-w-[1600px] mx-auto page-shell pt-10 md:pt-16 pb-12">
         <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 pb-10">
           <div className="space-y-3">
-            <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-[88px] font-serif-display italic font-normal tracking-tight leading-none text-[#121212]">
+            <h1 className="text-5xl sm:text-50xl md:text-8xl lg:text-[100px] font-serif-display italic font-normal tracking-tight leading-none text-[#121212]">
               Linen &amp; Natural Fibre
             </h1>
-            <p className="text-lg sm:text-xl font-serif-display text-[#121212]/80 pt-2">
+            <p className="text-lg sm:text-2xl font-serif-display text-[#121212]/80 pt-1">
               Made slowly, Worn for years
             </p>
           </div>
@@ -63,14 +63,14 @@ export default function HomePage() {
           <Link
             href="/shop"
             id="hero-shop-all-button"
-            className="px-8 py-4 bg-[#121212] text-[#F9F8F2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#121212]/85 transition-all rounded-xs font-medium"
+            className="px-20 py-4 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-all rounded-xs font-medium"
           >
             Shop all
           </Link>
         </div>
 
         {/* HERO CAROUSEL BANNER */}
-        <div className="relative w-full h-[450px] sm:h-[600px] md:h-[700px] bg-[#EAE7DC] rounded-xs overflow-hidden group">
+       <div className="relative w-screen left-1/2 right-1/2 -ml-[50vw] -mr-[50vw] min-h-screen bg-[#EAE7DC] overflow-hidden group">
           {HERO_SLIDES.map((slideUrl, idx) => (
             <div
               key={idx}
@@ -84,7 +84,7 @@ export default function HomePage() {
                 fill
                 priority={idx === 0}
                 className="object-cover object-top"
-                sizes="(max-width: 1400px) 100vw, 1400px"
+                sizes="100vw"
                 referrerPolicy="no-referrer"
               />
             </div>
@@ -123,8 +123,8 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 2: OUR MISSION */}
-      <section className="w-full py-24 md:py-32 border-t border-[#988985]/15 bg-[#F9F8F2]">
-        <div className="max-w-[1400px] mx-auto px-4 md:px-8 text-left space-y-6">
+      <section className="w-full py-24 md:py-32 border-t border-[#988985]/15 bg-[#e9eae2]">
+        <div className="max-w-[1400px] mx-auto page-shell text-left space-y-6">
           <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
             Our Mission
           </p>
@@ -135,7 +135,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 3: LINEN & NATURAL FIBRE COLLECTION */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20 md:py-28 border-t border-[#988985]/15">
+      <section className="max-w-[1600px] mx-auto page-shell py-20 md:py-28 border-t border-[#988985]/15">
         <div className="flex justify-between items-baseline mb-12">
           <h2 className="text-3xl md:text-[40px] font-serif-display text-[#121212]">
             Linen &amp; Natural Fibre Collection
@@ -157,7 +157,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 4: STREETWEAR */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20 md:py-28 border-t border-[#988985]/15">
+      <section className="max-w-[1600px] mx-auto page-shell py-20 md:py-28 border-t border-[#988985]/15">
         <div className="flex justify-between items-baseline mb-12">
           <h2 className="text-3xl md:text-[40px] font-serif-display text-[#121212]">
             Streetwear
@@ -179,8 +179,8 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 5: EXPLORE THE COLLECTION */}
-      <section className="w-full py-24 bg-[#F5F3ED] border-t border-b border-[#988985]/15">
-        <div className="max-w-[1600px] mx-auto px-4 md:px-8 space-y-5">
+      <section className="w-full py-24 bg-[#cec3b1] border-t border-b border-[#988985]/15">
+        <div className="max-w-[1600px] mx-auto page-shell space-y-5">
           <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
             EXPLORE THE COLLECTION
           </p>
@@ -193,7 +193,7 @@ export default function HomePage() {
           <div className="pt-6">
             <Link
               href="/shop"
-              className="inline-flex items-center space-x-2 text-sm font-mono-code uppercase tracking-wider px-8 py-4 bg-[#121212] text-[#F9F8F2] hover:bg-[#121212]/85 transition-colors rounded-xs"
+              className="inline-flex items-center space-x-2 text-sm font-mono-code uppercase tracking-wider px-8 py-4 bg-[#492d22] text-[#e9eae2] hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors rounded-xs"
             >
               <span>Shop All</span>
               <ArrowRight className="w-4 h-4" />
@@ -203,7 +203,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 6: CATEGORIES & DUAL BANNERS */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-24 border-b border-[#988985]/15">
+      <section className="max-w-[1600px] mx-auto page-shell py-24 border-b border-[#988985]/15">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
           {/* Categories Typography List */}
@@ -275,7 +275,7 @@ export default function HomePage() {
       </section>
 
       {/* SECTION 7: STORIES */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-24">
+      <section className="max-w-[1600px] mx-auto page-shell py-24">
         <div className="flex justify-between items-baseline mb-12">
           <h2 className="text-3xl md:text-[40px] font-serif-display text-[#121212]">
             Stories

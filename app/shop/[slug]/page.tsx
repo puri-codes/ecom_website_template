@@ -31,14 +31,14 @@ export default function ProductDetailPage() {
 
   if (!product) {
     return (
-      <div className="max-w-[1600px] mx-auto px-4 py-40 text-center space-y-6">
+      <div className="max-w-[1600px] mx-auto page-shell py-40 text-center space-y-6">
         <h1 className="text-5xl font-serif-display text-[#121212]">Product Not Found</h1>
-        <p className="text-sm font-mono-code text-[#988985]">
+        <p className="text-sm font-mono-code text-[#765439]">
           The item you are searching for does not exist in our current collection.
         </p>
         <Link
           href="/shop"
-          className="inline-block mt-6 px-8 py-4 bg-[#121212] text-[#F9F8F2] font-mono-code text-sm uppercase"
+          className="inline-block mt-6 px-8 py-4 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors"
         >
           Return to Shop
         </Link>
@@ -52,12 +52,12 @@ export default function ProductDetailPage() {
     <div className="w-full bg-[#F9F8F2] text-[#121212]">
       
       {/* MAIN PDP GRID */}
-      <div className="max-w-[1600px] mx-auto px-4 md:px-8 py-12 md:py-20">
+      <div className="max-w-[1600px] mx-auto page-shell py-12 md:py-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-20 items-start">
           
           {/* LEFT COLUMN: TITLE, CATEGORY, PRICE */}
           <div className="lg:col-span-3 lg:sticky lg:top-28 space-y-5">
-            <p className="text-sm font-mono-code text-[#988985]">
+            <p className="text-sm font-mono-code text-[#765439]">
               {product.isLinenCollection ? 'Linen & Natural Fibre' : product.category}
             </p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif-display font-medium text-[#121212] tracking-tight leading-[1.05]">
@@ -92,7 +92,7 @@ export default function ProductDetailPage() {
           <div className="lg:col-span-3 lg:sticky lg:top-28 space-y-10">
             
             {/* Quantity Selector */}
-            <div className="flex items-center justify-between border border-[#988985]/30 bg-[#FAF8F5] p-3 rounded-xs">
+            <div className="flex items-center justify-between border border-[#765439]/30 bg-[#FAF8F5] p-3 rounded-xs">
               <button
                 onClick={() => setQuantity((q) => Math.max(1, q - 1))}
                 className="p-1.5 hover:bg-[#121212]/5 text-[#121212]"
@@ -113,7 +113,7 @@ export default function ProductDetailPage() {
             {/* Size Selector */}
             {product.sizes.length > 0 && (
               <div className="space-y-3">
-                <label className="text-xs font-mono-code text-[#988985] uppercase">
+                <label className="text-xs font-mono-code text-[#765439] uppercase">
                   Size: <span className="text-[#121212]">{selectedSize}</span>
                 </label>
                 <div className="grid grid-cols-4 gap-3 font-mono-code text-sm">
@@ -124,7 +124,7 @@ export default function ProductDetailPage() {
                       className={`py-3 border text-center transition-all ${
                         selectedSize === sz
                           ? 'bg-[#121212] text-[#F9F8F2] border-[#121212]'
-                          : 'bg-transparent text-[#121212] border-[#988985]/30 hover:border-[#121212]'
+                          : 'bg-transparent text-[#121212] border-[#765439]/30 hover:border-[#121212]'
                       }`}
                     >
                       {sz}
@@ -137,7 +137,7 @@ export default function ProductDetailPage() {
             {/* Color Selector */}
             {product.colors.length > 0 && (
               <div className="space-y-3">
-                <label className="text-xs font-mono-code text-[#988985] uppercase">
+                <label className="text-xs font-mono-code text-[#765439] uppercase">
                   Color: <span className="text-[#121212]">{selectedColor}</span>
                 </label>
                 <div className="flex space-x-3 font-mono-code text-sm">
@@ -148,7 +148,7 @@ export default function ProductDetailPage() {
                       className={`px-5 py-3 border transition-all ${
                         selectedColor === c.name
                           ? 'bg-[#121212] text-[#F9F8F2] border-[#121212]'
-                          : 'bg-transparent text-[#121212] border-[#988985]/30 hover:border-[#121212]'
+                          : 'bg-transparent text-[#121212] border-[#765439]/30 hover:border-[#121212]'
                       }`}
                     >
                       {c.name}
@@ -162,21 +162,21 @@ export default function ProductDetailPage() {
             <button
               onClick={() => addToCart(product, selectedSize, selectedColor, quantity)}
               id="add-to-cart-button"
-              className="w-full py-5 bg-[#121212] text-[#F9F8F2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#121212]/90 transition-all rounded-xs font-medium"
+              className="w-full py-5 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-all rounded-xs font-medium"
             >
               Add to Cart
             </button>
 
             {/* Shipping & Return Note */}
-            <p className="text-center text-xs font-mono-code text-[#988985] pt-3">
+            <p className="text-center text-xs font-mono-code text-[#765439] pt-3">
               Free shipping over $150 · 30-day returns
             </p>
 
             {/* ACCORDION SECTIONS */}
-            <div className="border-t border-[#988985]/20 pt-6 space-y-5 font-mono-code text-sm">
+            <div className="border-t border-[#765439]/20 pt-6 space-y-5 font-mono-code text-sm">
               
               {/* Material & Composition */}
-              <div className="border-b border-[#988985]/15 pb-4">
+              <div className="border-b border-[#765439]/15 pb-4">
                 <button
                   onClick={() => setMaterialOpen(!materialOpen)}
                   className="w-full flex justify-between items-center py-1.5 text-left font-medium text-[#121212]"
@@ -185,14 +185,14 @@ export default function ProductDetailPage() {
                   {materialOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </button>
                 {materialOpen && (
-                  <p className="mt-3 text-xs text-[#988985] leading-relaxed font-serif-display">
+                  <p className="mt-3 text-xs text-[#765439] leading-relaxed font-serif-display">
                     {product.material}
                   </p>
                 )}
               </div>
 
               {/* Care Instructions */}
-              <div className="border-b border-[#988985]/15 pb-4">
+              <div className="border-b border-[#765439]/15 pb-4">
                 <button
                   onClick={() => setCareOpen(!careOpen)}
                   className="w-full flex justify-between items-center py-1.5 text-left font-medium text-[#121212]"
@@ -201,14 +201,14 @@ export default function ProductDetailPage() {
                   {careOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </button>
                 {careOpen && (
-                  <p className="mt-3 text-xs text-[#988985] leading-relaxed font-serif-display">
+                  <p className="mt-3 text-xs text-[#765439] leading-relaxed font-serif-display">
                     {product.care}
                   </p>
                 )}
               </div>
 
               {/* Shipping & Returns */}
-              <div className="border-b border-[#988985]/15 pb-4">
+              <div className="border-b border-[#765439]/15 pb-4">
                 <button
                   onClick={() => setShippingOpen(!shippingOpen)}
                   className="w-full flex justify-between items-center py-1.5 text-left font-medium text-[#121212]"
@@ -217,7 +217,7 @@ export default function ProductDetailPage() {
                   {shippingOpen ? <ChevronUp className="w-4 h-4" /> : <ChevronDown className="w-4 h-4" />}
                 </button>
                 {shippingOpen && (
-                  <p className="mt-3 text-xs text-[#988985] leading-relaxed font-serif-display">
+                  <p className="mt-3 text-xs text-[#765439] leading-relaxed font-serif-display">
                     {product.shipping}
                   </p>
                 )}
@@ -231,7 +231,7 @@ export default function ProductDetailPage() {
       </div>
 
       {/* FEATURED MATERIAL BANNER SECTION */}
-      <section className="relative w-full min-h-[450px] bg-[#EAE7DC] my-20 overflow-hidden flex items-center justify-center p-8">
+      <section className="relative w-full min-h-[450px] bg-[#EAE7DC] my-20 overflow-hidden flex items-center justify-center px-0">
         <Image
           src="https://framerusercontent.com/images/bH7lrLwZ75K67A0rsbVZxnmnByc.png"
           alt="The Material texture macro"
@@ -240,8 +240,8 @@ export default function ProductDetailPage() {
           sizes="100vw"
           referrerPolicy="no-referrer"
         />
-        <div className="relative z-10 max-w-3xl bg-[#F9F8F2]/90 backdrop-blur-md p-10 md:p-16 rounded-xs border border-[#988985]/20 text-left space-y-4">
-          <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em]">
+        <div className="relative z-10 max-w-3xl bg-[#F9F8F2]/90 backdrop-blur-md p-10 md:p-16 rounded-xs border border-[#765439]/20 text-left space-y-4">
+          <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em]">
             The Material
           </p>
           <h3 className="text-2xl md:text-3xl font-serif-display text-[#121212]">
@@ -250,21 +250,21 @@ export default function ProductDetailPage() {
           <p className="text-sm md:text-base font-serif-display text-[#121212]/80 leading-relaxed">
             {product.description}
           </p>
-          <p className="text-xs font-mono-code text-[#988985] pt-3">
+          <p className="text-xs font-mono-code text-[#765439] pt-3">
             100% European linen · Relaxed fit · Mother-of-pearl buttons · Chest patch pocket
           </p>
         </div>
       </section>
 
       {/* RELATED PRODUCTS */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20">
+      <section className="max-w-[1600px] mx-auto page-shell py-20">
         <div className="flex justify-between items-baseline mb-10">
           <h2 className="text-3xl md:text-4xl font-serif-display text-[#121212]">
             You may also like
           </h2>
           <Link
             href="/shop"
-            className="text-sm font-mono-code text-[#121212] hover:text-[#988985] uppercase tracking-wider"
+            className="text-sm font-mono-code text-[#121212] hover:text-[#765439] uppercase tracking-wider"
           >
             Shop All
           </Link>

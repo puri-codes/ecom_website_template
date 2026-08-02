@@ -1,17 +1,17 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=IBM+Plex+Mono:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..700;1,400..700&family=Quicksand:wght@400;500;600;700&display=swap');
 
 :root {
   --token-bg: #F9F8F2;
   --token-text: #121212;
-  --token-muted: #988985;
-  --token-subtle: #786E5F;
-  --token-border: rgba(152, 137, 133, 0.25);
+  --token-muted: #765439;
+  --token-subtle: #492d22;
+  --token-border: rgba(118, 84, 57, 0.25);
   --font-serif: 'EB Garamond', Georgia, serif;
-  --font-mono: 'IBM Plex Mono', monospace;
+  --font-mono: 'Quicksand', sans-serif;
+  --page-pad: 0.875rem;
+  --page-pad-md: 1.5rem;
   --container-max: 1600px;
-  --container-pad: 1rem;
-  --container-pad-md: 2rem;
 }
 
 body {
@@ -31,6 +31,18 @@ body {
 
 .font-mono-code {
   font-family: var(--font-mono);
+}
+
+.page-shell {
+  padding-left: var(--page-pad);
+  padding-right: var(--page-pad);
+}
+
+@media (min-width: 768px) {
+  .page-shell {
+    padding-left: var(--page-pad-md);
+    padding-right: var(--page-pad-md);
+  }
 }
 
 /* Smooth Scrolling */

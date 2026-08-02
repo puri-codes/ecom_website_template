@@ -13,25 +13,25 @@ const SOCIAL_IMAGES = [
 
 export default function SocialSection() {
   return (
-    <section className="w-full py-24 bg-[#F9F8F2] overflow-hidden border-t border-[#988985]/15">
+    <section className="w-full py-24 bg-[#e9eae2] overflow-hidden border-t border-[#765439]/15">
       <div className="text-center space-y-3 mb-14">
         <h2 className="text-4xl md:text-5xl font-serif-display text-[#121212] tracking-tight">
           Follow us on Social Media
         </h2>
         <a
-          href="https://www.instagram.com/get_verite"
+          href="https://www.instagram.com/saastra"
           target="_blank"
           rel="noopener noreferrer"
           id="social-handle-link"
-          className="inline-block text-sm font-mono-code text-[#988985] hover:text-[#121212] transition-colors"
+          className="inline-block text-sm font-mono-code text-[#765439] hover:text-[#121212] transition-colors"
         >
-          @get_verite
+          @saastra
         </a>
       </div>
 
       {/* Infinite Horizontal Image Ticker */}
       <div className="relative w-full overflow-hidden">
-        <div className="animate-ticker flex space-x-8 px-4">
+        <div className="animate-ticker flex space-x-8 page-shell">
           {[...SOCIAL_IMAGES, ...SOCIAL_IMAGES, ...SOCIAL_IMAGES].map((imgUrl, i) => (
             <div
               key={i}

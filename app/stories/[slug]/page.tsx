@@ -18,9 +18,9 @@ export default function StoryDetailPage() {
 
   if (!story) {
     return (
-      <div className="max-w-[1600px] mx-auto px-4 py-40 text-center space-y-6">
+      <div className="max-w-[1600px] mx-auto page-shell py-40 text-center space-y-6">
         <h1 className="text-5xl font-serif-display text-[#121212]">Story Not Found</h1>
-        <p className="text-sm font-mono-code text-[#988985]">
+        <p className="text-sm font-mono-code text-[#765439]">
           The article you requested could not be located.
         </p>
         <Link
@@ -39,18 +39,18 @@ export default function StoryDetailPage() {
     <div className="w-full bg-[#F9F8F2] text-[#121212]">
       
       {/* ARTICLE HEADER */}
-      <article className="max-w-[1200px] mx-auto px-4 md:px-8 pt-16 md:pt-24 pb-20 space-y-10">
+      <article className="max-w-[1200px] mx-auto page-shell pt-16 md:pt-24 pb-20 space-y-10">
         
         <Link
           href="/stories"
-          className="inline-flex items-center space-x-2 text-sm font-mono-code text-[#988985] hover:text-[#121212] transition-colors uppercase tracking-wider"
+          className="inline-flex items-center space-x-2 text-sm font-mono-code text-[#765439] hover:text-[#121212] transition-colors uppercase tracking-wider"
         >
           <ArrowLeft className="w-4 h-4" />
           <span>Back to All Stories</span>
         </Link>
 
         <div className="space-y-5">
-          <p className="text-sm font-mono-code text-[#786E5F] uppercase tracking-[0.15em] font-medium">
+          <p className="text-sm font-mono-code text-[#492d22] uppercase tracking-[0.15em] font-medium">
             {story.date} · BY {story.author.toUpperCase()}
           </p>
           <h1 className="text-5xl sm:text-6xl md:text-7xl font-serif-display font-medium text-[#121212] tracking-tight leading-[1.1]">
@@ -86,7 +86,7 @@ export default function StoryDetailPage() {
           <p className="text-2xl md:text-3xl font-serif-display italic text-[#121212]">
             &ldquo;Every seam, weave, and fold is designed to mature gracefully through years of continuous wear.&rdquo;
           </p>
-          <p className="text-sm font-mono-code text-[#988985] uppercase tracking-wider">
+          <p className="text-sm font-mono-code text-[#765439] uppercase tracking-wider">
             — Verite Philosophy
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function StoryDetailPage() {
       </article>
 
       {/* RELATED STORIES */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20 border-t border-[#988985]/15">
+      <section className="max-w-[1600px] mx-auto page-shell py-20 border-t border-[#765439]/15">
         <h2 className="text-3xl font-serif-display text-[#121212] mb-10">
           More Stories
         </h2>
@@ -103,7 +103,7 @@ export default function StoryDetailPage() {
             <Link
               key={rel.id}
               href={`/stories/${rel.slug}`}
-              className="group flex gap-6 items-center bg-[#F5F3ED] p-6 rounded-xs border border-[#988985]/15 hover:border-[#121212] transition-colors"
+              className="group flex gap-6 items-center bg-[#F5F3ED] p-6 rounded-xs border border-[#765439]/15 hover:border-[#121212] transition-colors"
             >
               <div className="relative w-32 h-32 bg-[#EAE7DC] flex-shrink-0 rounded-xs overflow-hidden">
                 <Image
@@ -116,7 +116,7 @@ export default function StoryDetailPage() {
                 />
               </div>
               <div className="space-y-2">
-                <p className="text-xs font-mono-code text-[#988985]">{rel.date}</p>
+                <p className="text-xs font-mono-code text-[#765439]">{rel.date}</p>
                 <h3 className="text-xl font-serif-display font-medium text-[#121212] group-hover:underline">
                   {rel.title}
                 </h3>

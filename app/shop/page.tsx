@@ -39,10 +39,10 @@ export default function ShopPage() {
       </section>
 
       {/* CATEGORY TABS & PRODUCT GRID */}
-      <section className="max-w-[1600px] mx-auto px-4 md:px-8 py-20">
+      <section className="max-w-[1600px] mx-auto page-shell py-20">
         
         {/* Category Tabs */}
-        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-20 border-b border-[#988985]/20 pb-8">
+        <div className="flex flex-wrap items-center justify-center gap-8 md:gap-12 mb-20 border-b border-[#765439]/20 pb-8">
           {CATEGORIES.map((cat) => (
             <button
               key={cat}
@@ -50,7 +50,7 @@ export default function ShopPage() {
               className={`text-2xl sm:text-3xl md:text-4xl font-serif-display transition-all ${
                 selectedCategory === cat
                   ? 'text-[#121212] font-medium underline underline-offset-8 decoration-1'
-                  : 'text-[#988985] hover:text-[#121212]'
+                  : 'text-[#765439] hover:text-[#121212]'
               }`}
             >
               {cat}
@@ -59,7 +59,7 @@ export default function ShopPage() {
         </div>
 
         {/* Product Count Indicator */}
-        <div className="flex justify-between items-center text-sm font-mono-code text-[#988985] mb-10">
+        <div className="flex justify-between items-center text-sm font-mono-code text-[#765439] mb-10">
           <span>SHOWING {filteredProducts.length} PIECES</span>
           <span>CURRENCY: USD ($)</span>
         </div>
