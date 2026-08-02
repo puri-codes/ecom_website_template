@@ -119,6 +119,7 @@ export default function Header() {
           {/* Cart Trigger Button */}
           <button
             id="header-cart-button"
+            data-cursor="cta"
             onClick={() => setIsOpen(true)}
             className="py-1.5 px-3.5 border border-[#121212]/20 hover:border-[#121212] hover:bg-[#121212] hover:text-[#F9F8F2] transition-all rounded-full flex items-center space-x-1 font-medium text-[11px] md:text-xs tracking-wider"
           >

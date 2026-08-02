@@ -120,6 +120,7 @@ export default function ContactSection() {
               <button
                 type="submit"
                 id="contact-submit-button"
+                data-cursor="cta"
                 className="w-full py-5 bg-[#492d22] text-[#e9eae2] font-mono-code text-sm uppercase tracking-widest hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors rounded-xs font-medium text-center"
               >
                 Submit

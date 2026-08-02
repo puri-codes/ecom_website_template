@@ -16,7 +16,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       id={`product-card-${product.slug}`}
       className="group block w-full space-y-4"
     >
-      <div className="relative aspect-4/5 w-full bg-[#EAE7DC] overflow-hidden rounded-xs">
+      <div data-cursor="image" className="relative aspect-4/5 w-full bg-[#EAE7DC] overflow-hidden rounded-xs">
         {/* Main Display Image */}
         <Image
           src={product.displayImage}

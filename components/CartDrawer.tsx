@@ -39,7 +39,7 @@ export default function CartDrawer() {
           </div>
 
           {/* Cart Items List */}
-          <div className="flex-1 overflow-y-auto px-8 py-8 space-y-8">
+          <div data-lenis-prevent className="flex-1 overflow-y-auto px-8 py-8 space-y-8">
             {items.length === 0 ? (
               <div className="text-center py-20 space-y-6">
                 <p className="text-lg font-serif-display text-[#121212]/70 italic">
@@ -49,6 +49,7 @@ export default function CartDrawer() {
                   href="/shop"
                   onClick={() => setIsOpen(false)}
                   id="empty-cart-shop-link"
+                  data-cursor="cta"
                   className="inline-flex items-center space-x-2 text-sm font-mono-code uppercase px-6 py-3 bg-[#492d22] text-[#e9eae2] hover:bg-[#cec3b1]/85 hover:text-[#492d22] transition-colors rounded-sm"
                 >
                   <span>Explore Collection</span>
@@ -130,6 +131,7 @@ export default function CartDrawer() {
 
               <button
                 id="checkout-button"
+                data-cursor="cta"
                 onClick={() => {
                   alert('Thank you for choosing Verite. Proceeding to secure checkout...');
                 }}
